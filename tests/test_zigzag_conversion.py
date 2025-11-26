@@ -2,7 +2,7 @@
 Test File for ZigZag Conversion problem.
 """
 
-from strings.zigzag_conversion import Solution
+from problems.strings.zigzag_conversion import Solution
 
 """"
 Normal Cases
