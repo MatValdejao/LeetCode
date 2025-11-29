@@ -7,11 +7,18 @@ This repository is my space to learn and develop my algorithmic and data structu
 - re-usable structures, such as a ListNode class for common problems
 - experimenting different approaches
 - understanding code impact on space and time complexity
-- each problem will have its own small Readme
+- each problem will have its own small README
 
 ## Repo Structure
-|--- common/ #shared utilities like ListNode
-|--- problems
-|--- tests
-|--- requirements.txt
-|--- README.md
+    Leetcode/ 
+    ├── common/ #shared utilities like ListNode
+    ├── problems/
+    │   ├── __init__.py
+    │   └── strings/
+    │       ├── __init__.py
+    │       └── zigzag_conversion.py
+    ├── tests/
+    │   └── test_zigzag_conversion.py
+    ├── requirements.txt
+    ├── pytest.ini
+    └── README.md
