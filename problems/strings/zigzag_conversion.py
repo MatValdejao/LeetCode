@@ -1,8 +1,8 @@
 """
 LeetCode: ZigZag Conversion 
 
-Time: O(?)
-Space: O(?)
+Time: O(n) -> looping through each once
+Space: O(n) -> linear memory, each character stored in one list 
 
 """
 
