@@ -24,19 +24,19 @@ def test_example_3():
 Some edge cases (empty string, only two rows, rows to num of letter relationship)
 """
 
-def same_letter_count_rows():
+def test_same_letter_count_rows():
     # same number of letters as rows
     assert Solution().zigzagConvert("Orange", 6) == "Orange"
 
-def one_row():
+def test_one_row():
     # one row
     assert Solution().zigzagConvert("Orange", 1) == "Orange"
 
-def more_rows_than_letters():
+def test_more_rows_than_letters():
     # more rows
     assert Solution().zigzagConvert("Orange", 8) == "Orange"
 
-def empty_string():
+def test_empty_string():
     # empty input string
     assert Solution().zigzagConvert("", 4) == ""
 
