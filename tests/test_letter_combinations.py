@@ -66,7 +66,7 @@ Some edge cases
 """
 
 def test_empty_input():
-    # empty string input
+    # empty string input (even though there is a len > 1 constraint as well)
     assert Solution().letterCombinations('') == []
 
 def test_repeat_num():
