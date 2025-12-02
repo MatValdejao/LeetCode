@@ -1,4 +1,4 @@
-# Problem Statement (from LeetCode)
+# Problem Statement (Zigzag Conversion Problem)
 The string "PAYPALISHIRING" is written in a zigzag pattern on a given number of rows like this: 
 
     P   A   H   N
