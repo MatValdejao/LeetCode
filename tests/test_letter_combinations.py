@@ -12,7 +12,7 @@ Normal Cases
 
 def test_example_1():
     # leetcode base case
-    assert Solution().letterCombinations('23') == ['ad', 'ae', 'af', 'bd', 'be', 'bf','ce', 'ce', 'cf']
+    assert Solution().letterCombinations('23') == ['ad', 'ae', 'af', 'bd', 'be', 'bf','cd', 'ce', 'cf']
 
 def test_example_2():
     # leetcode base case

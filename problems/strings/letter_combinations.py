@@ -2,8 +2,8 @@
 
 LeetCode: Letter Combinations
 
-Time: O(?)
-Space: O(?)
+Time: O(4^n * n) -> learing step, forgot to add (* n) for all digits, checked in leetcode
+Space: O(n) -> list of digit combinations
 
 """
 
