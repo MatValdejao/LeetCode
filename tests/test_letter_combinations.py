@@ -3,7 +3,8 @@ Test file for Letter Combintations
 """
 
 from problems.strings.letter_combinations import Solution
-
+# use pytest.raises for 0 and 1 input
+import pytest
 
 """"
 Normal Cases
@@ -72,3 +73,8 @@ def test_empty_input():
 def test_repeat_num():
     # same digit input
     assert Solution().letterCombinations('22') == ['aa', 'ab', 'ac', 'ba', 'bb', 'bc', 'ca', 'cb', 'cc']
+
+def not_0_and_1():
+    # test for zero and one input
+    with pytest.raises(ValueError):
+        Solution.letterCombinations('10')
