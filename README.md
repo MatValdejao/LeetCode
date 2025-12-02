@@ -9,6 +9,12 @@ This repository is my space to learn and develop my algorithmic and data structu
 - understanding code impact on space and time complexity
 - each problem will have its own small README
 
+## Usage
+- Run git clone to copy repo
+- Setup up venv 
+- Install dependencies (run pip install -r requirements.txt)
+- Run tests via pytest (can use -v for verbose)
+
 ## Repo Structure
     Leetcode/ 
     ├── common/ #shared utilities like ListNode

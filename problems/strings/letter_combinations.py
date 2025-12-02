@@ -10,7 +10,7 @@ Space: O(n) -> list of digit combinations
 from typing import List
 
 class Solution:
-    def letterCombinations(self, digits: str) -> List[str]:
+    def letterCombinations(self, digits: str, debug=False) -> List[str]:
         # test for empty input
         if digits == '': return []
 
@@ -45,5 +45,11 @@ class Solution:
         # call backtrack
         backtrack(0, '')
 
+        if debug:
+            print(res)
+
         return res
 
+if __name__ == '__main__':
+    # set up debug
+    Solution().letterCombinations('22', debug=True) == ['aa', 'ab', 'ac', 'ba', 'bb', 'bc', 'ca', 'cb', 'cc']

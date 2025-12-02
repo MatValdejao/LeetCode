@@ -29,10 +29,6 @@ Space Complexity: O(n) linear complexity, characters stored in n lists
 
 Complexity for this problem optimized to linear.
 
-## Usage
-- Run git clone to copy repo
-- Setup up venv 
-- Install dependencies (run pip install -r requirements.txt)
-- Run tests via pytest (can use -v for verbose)
-- Debug if required -> python3 cwd/problems/strings/zigzag_conversion.py
+## Usage and Debug
+- Debug if required with -> python3 cwd/problems/strings/zigzag_conversion.py
     - Purpose of debug flag with \_\_main\_\_
