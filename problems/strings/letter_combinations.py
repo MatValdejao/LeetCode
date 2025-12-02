@@ -33,6 +33,17 @@ class Solution:
         res = []
 
         # create a bakctrack function for digits
-        def backtrack(idx, combination):
+        def backtrack(idx, combinations):
+            if idx == len(digits):
+                res.append(combinations[:])
+                return res
             
+            # look at digit dictionary and loop through letters, add to combination
+            for letter in digits_map_phone[digits[idx]]:
+                backtrack(idx+1, combinations + letter)
+                
+        # call backtrack
+        backtrack(0, '')
+
+        return res
 
