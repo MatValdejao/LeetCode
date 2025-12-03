@@ -50,7 +50,7 @@ def test_empty_string():
 def test_improper_character():
     # character error
     with pytest.raises(ValueError):
-        Solution().longestPalindrome(re.match(r'^[a-zA-Z0-9]+$'))
+        Solution().longestPalindrome('assa*')
 
 def test_case_sensitive():
     # case to be treated as different letters
