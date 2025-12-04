@@ -14,11 +14,12 @@ class Solution:
             raise ValueError('Input must contain only letters and digit')
 
         # will attempt a two pointer solution from center
-        def center_base(left, right):
+        def center_base(left: int, right: int):
             while left >= 0 and right < len(s) and s[left] == s[right]:
                 left -= 1
                 right += 1
-            return s[left:right]
+            # return left inbounds from -1
+            return s[left+1:right]
         
         # initialize palindrome string as first letter of s
         res = s[0]
@@ -36,7 +37,7 @@ class Solution:
             if len(even) > len(res):
                 res = even
 
-        print(res)
+        return res
 
 if __name__ == '__main__':
     Solution().longestPalindrome('racecar', Debug=True) == 'racecar'
