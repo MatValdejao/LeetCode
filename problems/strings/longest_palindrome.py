@@ -13,7 +13,11 @@ class Solution:
         if not s.isalnum():
             raise ValueError('Input must contain only letters and digit')
 
-
+        def center_base(left, right):
+            while left >= 0 and right < len(s) and s[left] == s[right]:
+                left -= 1
+                right += 1
+            
         # will attempt a two pointer solution from center
 
 
