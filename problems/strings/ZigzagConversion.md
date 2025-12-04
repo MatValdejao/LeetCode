@@ -24,7 +24,7 @@ Write the code that will take a string and make this conversion given a number o
 5. Add characters to lists, join all lists together
 
 ## Complexity
-Time Complexity: O(n) linear complexity (where n is len(s)), looping thrugh each character once
+Time Complexity: O(n) linear complexity (where n is len(s)), looping through each character once
 Space Complexity: O(n) linear complexity, characters stored in n lists
 
 Complexity for this problem optimized to linear.
