@@ -27,7 +27,7 @@ def test_example_2():
 
 def test_example_3():
     # my own base case
-    assert Solution().longestPalidrome('forgeeksskeegfor') == 'geeksskeeg'
+    assert Solution().longestPalindrome('forgeeksskeegfor') == 'geeksskeeg'
  
 def test_example_4():
     # one more base case

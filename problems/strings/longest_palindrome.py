@@ -1,7 +1,7 @@
 """
 
-Time: O(?)
-Space: O(?)
+Time: O(n^2) -> center_base function allows for 2n-1 centers, where n is len(s). Outer loop iterates through all characters n, leading to n^2
+Space: O(n) -> only store left and right of palindrome
 
 """
 
