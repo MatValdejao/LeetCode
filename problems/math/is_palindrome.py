@@ -7,9 +7,15 @@ Space: O(?)
 
 """
 
+import pytest
+
 class Solution: 
     def isPalindrome(self, x: int, Debug=False) -> bool:
+        if str(x) == '':
+           raise ValueError('Input must be a integer')
         
+        if len(str(x)) == 1:
+            return True
 
 
 
