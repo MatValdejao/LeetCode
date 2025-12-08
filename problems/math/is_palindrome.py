@@ -11,14 +11,13 @@ import pytest
 
 class Solution: 
     def isPalindrome(self, x: int, Debug=False) -> bool:
-        if str(x) == '':
+        if x == None:
            raise ValueError('Input must be a integer')
-        
-        if len(str(x)) == 1:
-            return True
 
-
+        reverse = str(x)[::-1]
+        return reverse == str(x)
+            
 
 # create debug call
 if __name__ == '__main__':
-    Solution().isPalindrome(121, Debug=True) == True
+    Solution().isPalindrome(12, Debug=True) == True

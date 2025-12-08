@@ -20,7 +20,7 @@ def test_example_2():
 
 # Leetcode thrid base case
 def test_example_3():
-    Solution().isPalindrome(10) = False
+    Solution().isPalindrome(10) == False
 
 # extra base case
 def test_example_4():
@@ -42,4 +42,4 @@ def test_neg_single():
 # will also raise error when empty input provided
 def test_blank():
     with pytest.raises(ValueError):
-        Solution().isPalindrome()
+        Solution().isPalindrome(None)
