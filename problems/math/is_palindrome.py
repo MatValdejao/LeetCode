@@ -2,8 +2,8 @@
 
 LeetCode - isPalindrome
 
-Time: O(?)
-Space: O(?)
+Time: O(n) -> x has n digits, reverse variable is of same digit length as x
+Space: O(n) -> reverse stores string of same length n as converted x
 
 """
 
