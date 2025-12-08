@@ -16,8 +16,13 @@ class Solution:
 
         reverse = str(x)[::-1]
         return reverse == str(x)
+    
+class SolutionNoConversion:
+    def isPalindrome(self, x: int, Debg=False) -> bool:
+
             
 
 # create debug call
 if __name__ == '__main__':
-    Solution().isPalindrome(12, Debug=True) == True
+    Solution().isPalindrome(12, Debug=True) == False
+    SolutionNoConversion().isPalindrome(12, Debug=True) = False
