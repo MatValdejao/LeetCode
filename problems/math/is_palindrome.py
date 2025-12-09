@@ -21,25 +21,26 @@ class Solution:
     
 class SolutionNoConversion:
     def isPalindrome(self, x: int, Debug=False) -> bool:
-        # check for negative numbers
-        if x < 0: return False
-
         # check for no input
         if x == None:
             raise ValueError('Must input an number.')
         
+        # check for negative numbers
+        if x < 0: return False
+        
         reverse = 0
+        number = x
 
         # us remainder to get last integer
-        while x != 0:
+        while number != 0:
             # remainder of input, multiplying by ten to build inverse
-            reverse = reverse * 10 + x % 10
+            reverse = reverse * 10 + number % 10
             # print(reverse)
             
-            # update x
-            x = x // 10
+            # update number
+            number = number // 10
             
-        return reverse == 
+        return reverse == x
             
             
 
