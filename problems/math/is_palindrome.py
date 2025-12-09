@@ -18,7 +18,9 @@ class Solution:
         return reverse == str(x)
     
 class SolutionNoConversion:
-    def isPalindrome(self, x: int, Debg=False) -> bool:
+    def isPalindrome(self, x: int, Debug=False) -> bool:
+        # check for negative numbers
+        if x < 0: return False
 
             
 
