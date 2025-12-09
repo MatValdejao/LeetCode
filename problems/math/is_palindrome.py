@@ -3,7 +3,7 @@
 LeetCode - isPalindrome
 
 Time: O(n) -> x has n digits, reverse variable is of same digit length as x
-Space: O(n) -> reverse stores string of same length n as converted x
+Space: O(n) -> reverse variable stores string of same length n as converted x
 
 """
 
@@ -48,5 +48,5 @@ class SolutionNoConversion:
 
 # create debug call
 if __name__ == '__main__':
-    Solution().isPalindrome(12321, Debug=True) == False
-    SolutionNoConversion().isPalindrome(12321, Debug=True) == False
+    Solution().isPalindrome(121, Debug=True) == False
+    SolutionNoConversion().isPalindrome(121, Debug=True) == False
