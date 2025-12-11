@@ -24,9 +24,15 @@ class Solution():
         if len(new_list) % 2 == 1:
             # for odd sized, find the middle index
             median = new_list[len(new_list)//2]
-            if debug:
-                print(median)
+        else: 
+            # for even sized, take average of center indexes
+            median = (new_list[len(new_list)//2-1] + new_list[len(new_list)//2]) / 2
 
+
+        if debug:
+            print(median)
+         
 
 if __name__ == '__main__':
-    Solution().find_median_sorted_array([1, 2], [3, 4, 5], debug=True) == 2.5
+    Solution().find_median_sorted_array([1, 2], [3, 4], debug=True) == 2.5
+    Solution().find_median_sorted_array([1, 2], [3, 4, 5], debug=True) == 3
