@@ -1,5 +1,12 @@
 """
 
+From both solutions, A performs better. Splicing the string is much more efficient than using a while loop. Although the second I think performs, albeit slightly, better in space. 
+
+"""
+
+
+"""
+
 LeetCode - isPalindrome
 
 Time: O(n) -> x has n digits, reverse variable is of same digit length as x
@@ -52,7 +59,7 @@ class SolutionNoConversion:
             
         return reverse == x
             
-            
+     
 
             
 

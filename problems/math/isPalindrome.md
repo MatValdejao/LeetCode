@@ -44,6 +44,9 @@ Follow-up: Can the problem be solved without converting to string first.
 - Time: O(n) -> n loops for n digits in x
 - Space: O(1) -> reverse is stored in one variable
 
-# Debugging
+## Debugging
 - Debug if required with -> python3 cwd/problems/strings/is_palindrome.py
     - Purpose of debug flag with \_\_main\_\_
+
+## Comment
+From both solutions, A performs better. Splicing the string is much more efficient than using a while loop. Although the second I think performs, albeit slightly, better in space. Overall from these two, A seems to be the way to go, although I will come back to this one and try to improve the no conversion method. 
