@@ -27,6 +27,10 @@ def test_base_2():
 def test_base_3():
     assert Solution().find_median_sorted_array([1, 1], [1, 1]) == 1
 
+# adding a mixed number base case
+def test_base_4():
+    assert Solution().find_median_sorted_array([-3, 4, 2, -3, 5], [1, -1, 4, 3]) == 2
+
 """
 
 Edge Cases
