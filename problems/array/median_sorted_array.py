@@ -19,7 +19,8 @@ class Solution():
 
         # if debug:
         #     print(new_list)
-        
+        if len(new_list) == 0: return 0
+
         # need to differentiate between odd sized and even for median
         if len(new_list) % 2 == 1:
             # for odd sized, find the middle index
@@ -28,9 +29,10 @@ class Solution():
             # for even sized, take average of center indexes
             median = (new_list[len(new_list)//2-1] + new_list[len(new_list)//2]) / 2
 
-
         if debug:
             print(median)
+        
+        return median
          
 
 if __name__ == '__main__':
