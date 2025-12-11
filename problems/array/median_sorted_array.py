@@ -2,8 +2,8 @@
 
 LeetCode - Find Median Sorted Array 
 
-Time: O(?)
-Space: O(?)
+Time: O(m+n) -> most of the time complexity comes from sorting the lists 
+Space: O(m+n) -> storage of combined sorted new list
 
 """
 
