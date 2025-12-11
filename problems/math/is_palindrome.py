@@ -19,6 +19,16 @@ class Solution:
         reverse = str(x)[::-1]
         return reverse == str(x)
     
+
+"""
+
+LeetCode - isPalindrome
+
+Time: O(n) -> n loops for n digits in x
+Space: O(1) -> reverse stored in one variable
+
+"""
+
 class SolutionNoConversion:
     def isPalindrome(self, x: int, Debug=False) -> bool:
         # check for no input

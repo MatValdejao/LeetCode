@@ -41,7 +41,7 @@ Follow-up: Can the problem be solved without converting to string first.
 - Space: O(n) -> stores reverse string of length n
 
 ## Without Conversion:
-- Time: O(n) -> n loops through n digits in x
+- Time: O(n) -> n loops for n digits in x
 - Space: O(1) -> reverse is stored in one variable
 
 # Debugging
