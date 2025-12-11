@@ -32,3 +32,32 @@ def test_base_3():
 Edge Cases
 
 """
+
+# one edge case is one list is empty
+def test_one_empty():
+    assert Solution().find_median_sorted_array([], [1]) == 1
+
+# both lists are empty
+def test_both_empty():
+    # will make equal to zero, still return float but idea of nothingness
+    assert Solution().find_median_sorted_array([], []) == 0 
+
+# another one empty, but with second larger list
+def test_one_empty_larger():
+    assert Solution().find_median_sorted_array([], [1, 2, 3, 4]) == 2.5
+
+# will insert arrays of different sized in edge case
+def test_different_sizes():
+    assert Solution().find_median_sorted_array([1, 2], [3, 4, 5, 6, 7, 8, 9]) == 5
+
+# all negative numbers, will add a mixed one to base cases
+def test_all_neg():
+    assert Solution().find_median_sorted_array([-5, -3, -1], [-2, -1]) == -2
+
+# will add one with duplicate numbers
+def test_duplicate_numbers():
+    assert Solution().find_median_sorted_array([1, 1, 2], [1, 1, 4, 4]) == 2
+
+# adding stress test from now
+def test_stress():
+    assert Solution().find_median_sorted_array(list(range(0, 1001, 1)), list(range(0, 1000, 1))) == 500
