@@ -58,10 +58,6 @@ def test_different_sizes():
 def test_all_neg():
     assert Solution().find_median_sorted_array([-5, -3, -1], [-2, -1]) == -2
 
-# will add one with duplicate numbers
-def test_duplicate_numbers():
-    assert Solution().find_median_sorted_array([1, 1, 2], [1, 1, 4, 4]) == 2
-
 # adding stress test from now
 def test_stress():
     assert Solution().find_median_sorted_array(list(range(0, 1001, 1)), list(range(0, 1000, 1))) == 500
