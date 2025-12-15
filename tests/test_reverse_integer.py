@@ -43,6 +43,10 @@ def test_no_input():
 def test_outside_range():
     with pytest.raises(ValueError):
         Solution().reverse(3**31)
+    
+# throw error if input is in range but output not, return 0
+def test_output_large():
+    assert Solution().reverse(2**31-1) == 0
 
 # stress test
 def test_stress():

@@ -12,7 +12,7 @@ import pytest
 class Solution:
     def reverse(self, x: int, Debug=False) -> int:
         if x == None: raise ValueError('Must input integer')
-        if x >= 2**31 - 1:
+        if x < -2**31 or x > 2**31 - 1:
             raise ValueError('Outside bit-32 range')
         
         # check if number is neg and save
@@ -25,9 +25,12 @@ class Solution:
 
         # convert to string, reverse and return reverse with checked neg
         rev = str(x)[::-1]
-        if Debug:
-            print(rev)
-        
+        # if Debug:
+        #     print(rev)
+
+        # adding check for if return value is to large, add test case
+        if int(rev) > 2**31-1: return 0
+
         # check if number was negative and add back to return 
         if negative: return -(int(rev))
         else: return int(rev)
