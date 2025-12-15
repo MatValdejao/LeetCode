@@ -39,3 +39,11 @@ def test_no_input():
     with pytest.raises(ValueError):
         Solution.reverse()
 
+# throw error if in larger that 32bit
+def test_outside_range():
+    with pytest.raises(ValueError):
+        Solution.reverse(3**31)
+
+# stress test
+def test_stress():
+    assert Solution.reverse(1463847412) ==  2147483641
