@@ -2,8 +2,8 @@
 
 LeetCode: Revere String
 
-Time: O(?) ->
-Space: O(?) ->
+Time: O(n) -> Reversing the string requires n steps, for n string length of conversion
+Space: O(n) -> Storage of two variables, a reverse string of length n stored
 
 """
 
